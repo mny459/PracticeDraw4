@@ -1,5 +1,6 @@
 package com.hencoder.hencoderpracticedraw4;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        tabLayout.setTabTextColors(Color.GREEN,Color.BLACK);
         tabLayout.setupWithViewPager(pager);
     }
 
